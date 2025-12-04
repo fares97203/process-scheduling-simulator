@@ -58,5 +58,6 @@ void remove_head(process_queue *p);
 void fifo_sched(process_queue* p, process_descriptor_t** descriptor, int *size);
 void round_robin_sched(process_queue* p, process_descriptor_t** descriptor, int *size, int quantum);
 void priority_sched(process_queue* p,  process_descriptor_t** descriptor, int *size);
+void mlq_sched(process_queue* p, process_descriptor_t** descriptor, int *size, int quantum);
 
 #endif 
